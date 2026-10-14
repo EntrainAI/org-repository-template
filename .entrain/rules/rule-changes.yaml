@@ -1,0 +1,7 @@
+description: Changes to rules, attributes, gitattributes and code owners need a person
+when: >-
+  path.glob(['.entrain/rules/**', '.entrain/attributes/**', 'projects/*/.entrain/**',
+  '**/.gitattributes', 'CODEOWNERS', '.github/CODEOWNERS', 'docs/CODEOWNERS'])
+locked: true
+requires:
+  - people: [pr.author, members]
