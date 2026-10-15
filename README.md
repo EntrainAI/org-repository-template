@@ -10,7 +10,9 @@ requests under.
 
 Changing a rule is a pull request here, reviewed under these rules.
 `rule-changes` is locked: a change to a rule, an attribute, `.gitattributes` or
-`CODEOWNERS` needs a person's approval, the author's included.
+`CODEOWNERS` needs a person's approval, the author's included. A push dismisses
+it (`dismiss: on-push`): an approval counts only at the head it approved, or at
+one that makes exactly the same changes, as after a rebase onto other files.
 
 Keep the default branch protected, requiring a pull request and the
 `entrain/rules` check, so that no direct push changes every repository's rules
