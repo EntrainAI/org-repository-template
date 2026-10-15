@@ -5,3 +5,4 @@ when: >-
 locked: true
 requires:
   - people: [pr.author, members]
+    dismiss: on-push
